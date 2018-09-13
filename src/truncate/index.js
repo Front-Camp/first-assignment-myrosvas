@@ -10,8 +10,6 @@
 const truncate = (str, length = 0, replacer = '...') => {
  if (!str || length > str.length ) return str;
  let truncatedStr = str.slice(0, length - replacer.length);
- console.log(truncatedStr, length, replacer, '<<')
-console.log(str)
  return truncatedStr + replacer;
 };
 
