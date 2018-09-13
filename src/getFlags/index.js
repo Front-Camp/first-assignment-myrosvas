@@ -6,7 +6,13 @@
  * getFlags(arr); // [1, 2, 3, 4, 5, 6]
  */
 const getFlags = arr => {
-  /* your logic here...*/
+  let newArray = [];
+  arr.forEach(i =>{
+    i.flags.forEach(j=>{
+      newArray.push(j)
+    })
+  });
+  return newArray;
 };
 
 export default getFlags;
